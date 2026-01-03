@@ -10,7 +10,6 @@ import java.math.BigDecimal;
 public class RoomDto {
 
     private Long id;
-    private Hotel hotel;   //room is the owner of the relationship
 
     private String type;
 
