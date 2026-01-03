@@ -1,0 +1,26 @@
+package com.learning.AirBnb.Project.dto;
+
+import com.learning.AirBnb.Project.entities.Hotel;
+import jakarta.persistence.*;
+import lombok.Data;
+
+import java.math.BigDecimal;
+
+@Data
+public class RoomDto {
+
+    private Long id;
+    private Hotel hotel;   //room is the owner of the relationship
+
+    private String type;
+
+    private BigDecimal basePrice;
+
+    private String[] photos;
+
+    private String[] amenities;
+
+    private Integer totalCount;
+
+    private Integer capacity;
+}
