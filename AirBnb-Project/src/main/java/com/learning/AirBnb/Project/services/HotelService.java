@@ -11,4 +11,6 @@ public interface HotelService {
     HotelDto updateHotelById(Long id, HotelDto hotelDto);
 
     void DeleteHotelById(Long id);
+
+    void activateHotel(Long Id);
 }
